@@ -2,7 +2,6 @@ package com.geekbrains.lesson8.homework.hw3;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -25,10 +24,6 @@ public class MainApp {
             this.salary = salary;
         }
 
-        public int getAge() {
-            return age;
-        }
-
         public String getName() {
             return name;
         }
@@ -48,17 +43,15 @@ public class MainApp {
                 )
         );
 
-        persons
+        System.out.println(persons
                 .stream()
-                .mapToInt(Person::getAge)
-                .boxed()
-                .sorted(Comparator.reverseOrder())
+                .sorted((o1, o2) -> o2.age - o1.age)
                 .limit(n)
-                .toList();
-                //.collect();
+                .map(Person::getName)
+                .collect(Collectors.joining(", ", n + " самых старших сотрудников зовут:\n", ";")));
     }
 
     public static void main(String[] args) {
-        FindAgeOfNPersons(3);
+        FindAgeOfNPersons(2);
     }
 }
