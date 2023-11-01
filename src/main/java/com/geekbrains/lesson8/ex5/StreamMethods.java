@@ -127,7 +127,7 @@ public class StreamMethods {
                     .map(line -> line.split("\\s"))
                     .flatMap(Arrays::stream)
                     .distinct()
-                    .collect(Collectors.joining(", ", "Уникальные слова :", ".")));
+                    .collect(Collectors.joining(", ", "Уникальные слова : ", ".")));
         } catch (IOException e) {
             e.printStackTrace();
         }
