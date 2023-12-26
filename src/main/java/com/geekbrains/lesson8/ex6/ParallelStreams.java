@@ -1,4 +1,4 @@
-package com.geekbrains.lesson8.stream.ex6;
+package com.geekbrains.lesson8.ex6;
 
 import java.util.Arrays;
 

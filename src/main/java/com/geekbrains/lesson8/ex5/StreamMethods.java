@@ -1,4 +1,4 @@
-package com.geekbrains.lesson8.stream.ex5;
+package com.geekbrains.lesson8.ex5;
 
 import java.io.IOException;
 import java.nio.file.Files;

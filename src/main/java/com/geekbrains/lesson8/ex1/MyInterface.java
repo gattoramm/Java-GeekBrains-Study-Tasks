@@ -1,4 +1,4 @@
-package com.geekbrains.lesson8.stream.ex1;
+package com.geekbrains.lesson8.ex1;
 
 @FunctionalInterface
 public interface MyInterface {

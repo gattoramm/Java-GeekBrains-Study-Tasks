@@ -1,26 +1,28 @@
-package com.geekbrains.lesson8.stream.ex5;
+package com.geekbrains.lesson8.ex5;
+
+import static com.geekbrains.lesson8.ex5.StreamMethods.*;
 
 public class MainClass {
     public static void main(String[] args) {
         System.out.println("\tsecondEx()");
-        StreamMethods.secondEx();
+        secondEx();
         System.out.println("\tthirdEx()");
-        StreamMethods.thirdEx();
+        thirdEx();
         System.out.println("\tmatchEx()");
-        StreamMethods.matchEx();
+        matchEx();
         System.out.println("\tfindAnyEx()");
-        StreamMethods.findAnyEx();
+        findAnyEx();
         System.out.println("\tmappingEx()");
-        StreamMethods.mappingEx();
+        mappingEx();
         System.out.println("\treduceEx()");
-        StreamMethods.reduceEx();
+        reduceEx();
         System.out.println("\tintStreamEx()");
-        StreamMethods.intStreamEx();
+        intStreamEx();
         System.out.println("\tstreamFromFileEx()");
-        StreamMethods.streamFromFileEx("src/main/java/resources/123.txt");
+        streamFromFileEx("src/main/java/resources/123.txt");
         System.out.println("\tsimpleStringEx()");
-        StreamMethods.simpleStringEx();
+        simpleStringEx();
         System.out.println("\tfunction()");
-        StreamMethods.function("src/main/java/resources/text.txt");
+        function("src/main/java/resources/text.txt");
     }
 }

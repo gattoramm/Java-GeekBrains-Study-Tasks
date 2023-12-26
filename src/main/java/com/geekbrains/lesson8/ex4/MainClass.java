@@ -1,4 +1,4 @@
-package com.geekbrains.lesson8.stream.ex4;
+package com.geekbrains.lesson8.ex4;
 
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
