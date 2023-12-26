@@ -1,8 +1,8 @@
-package com.geekbrains.lesson8.ex6;
+package com.geekbrains.lesson8.stream.ex6;
 
 import java.util.concurrent.ForkJoinPool;
 
-import static com.geekbrains.lesson8.ex6.ParallelStreams.forkEx;
+import static com.geekbrains.lesson8.stream.ex6.ParallelStreams.forkEx;
 
 
 public class MainApp {

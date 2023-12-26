@@ -1,4 +1,4 @@
-package com.geekbrains.lesson8.ex3;
+package com.geekbrains.lesson8.stream.ex3;
 
 import java.util.ArrayList;
 import java.util.Arrays;

@@ -1,4 +1,4 @@
-package com.geekbrains.lesson8.homework.hw1;
+package com.geekbrains.lesson8.stream.homework.hw1;
 
 /**
  * Создайте массив с набором слов, и с помощью Stream API найдите наиболее часто

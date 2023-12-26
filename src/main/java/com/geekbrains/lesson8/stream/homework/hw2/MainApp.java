@@ -1,15 +1,12 @@
-package com.geekbrains.lesson8.homework.hw3;
+package com.geekbrains.lesson8.stream.homework.hw2;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.stream.Collectors;
 
 /**
- * Напишите метод, способный найти в массиве сотрудников из п. 2 найдите N самых старших
- * сотрудников и отпечатает в консоль сообщение вида
- * “N самых старших сотрудников зовут:
- * имя1, имя2, имяN;”
+ * Создайте массив объектов типа Сотрудник (с полями Имя, Возраст, Зарплата) и вычислите
+ * среднюю зарплату сотрудника
  * */
 
 public class MainApp {
@@ -24,12 +21,12 @@ public class MainApp {
             this.salary = salary;
         }
 
-        public String getName() {
-            return name;
+        public int getSalary() {
+            return salary;
         }
     }
 
-    static void FindAgeOfNPersons(int n) {
+    public static void main(String[] args) {
         List<Person> persons = new ArrayList<>(
                 Arrays.asList(
                         new Person("Bob", 20, 1000),
@@ -45,13 +42,7 @@ public class MainApp {
 
         System.out.println(persons
                 .stream()
-                .sorted((o1, o2) -> o2.age - o1.age)
-                .limit(n)
-                .map(Person::getName)
-                .collect(Collectors.joining(", ", n + " самых старших сотрудников зовут:\n", ";")));
-    }
-
-    public static void main(String[] args) {
-        FindAgeOfNPersons(2);
+                .mapToDouble(Person::getSalary)
+                .average());
     }
 }
