@@ -1,4 +1,4 @@
-package com.geekbrains.lesson6;
+package com.geekbrains.lesson6.ex1;
 
 public class ThreadExampleClass extends Thread{
     @Override
